@@ -1,0 +1,16 @@
+<h2>Manage Students</h2>
+<form (ngSubmit)="onSubmitStudent()">
+  <input [(ngModel)]="newStudent.name" name="studentName" placeholder="Student Name" required />
+  <select [(ngModel)]="newStudent.classId" name="studentClass">
+    <option *ngFor="let class of classes" [value]="class.id">{{ class.name }}</option>
+  </select>
+  <button type="submit">Add Student</button>
+</form>
+
+<ul>
+  <li *ngFor="let student of students">
+    {{ student.name }} - {{ getClassName(student.classId) }}
+    <button (click)="editStudent(student)">Edit</button>
+    <button (click)="deleteStudent(student.id)">Delete</button>
+  </li>
+</ul>

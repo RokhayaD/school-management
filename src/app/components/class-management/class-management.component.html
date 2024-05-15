@@ -1,0 +1,13 @@
+<h2>Manage Classes</h2>
+<form (ngSubmit)="onSubmitClass()">
+  <input [(ngModel)]="newClass.name" name="className" placeholder="Class Name" required />
+  <button type="submit">Add Class</button>
+</form>
+
+<ul>
+  <li *ngFor="let class of classes">
+    {{ class.name }}
+    <button (click)="editClass(class)">Edit</button>
+    <button (click)="deleteClass(class.id)">Delete</button>
+  </li>
+</ul>

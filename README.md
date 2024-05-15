@@ -1,27 +1,50 @@
-# SchoolManagement
+# Application de Gestion Scolaire
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
+## Introduction
+Ceci est une application Angular simple pour gérer les classes et les étudiants du Lycée d'Excellence de Dakar.
 
-## Development server
+## Fonctionnalités
+- Ajouter, mettre à jour, supprimer des classes.
+- Ajouter, mettre à jour, supprimer des étudiants.
+- Lister toutes les classes et tous les étudiants.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Prérequis
+- Node.js et npm doivent être installés sur votre machine. Vous pouvez les télécharger depuis [nodejs.org](https://nodejs.org/).
 
-## Code scaffolding
+Ce projet a été généré avec Angular CLI version 17.3.7.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Serveur de développement
+Exécutez 'ng serve' pour lancer un serveur de développement. Accédez à http://localhost:4200/. L'application se rechargera automatiquement si vous modifiez l'un des fichiers source.
+
+## Génération de code
+Exécutez 'ng generate component component-name' pour générer un nouveau composant. Vous pouvez également utiliser ng generate directive|pipe|service|class|guard|interface|enum|module.
 
 ## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
+Exécutez 'ng build' pour construire le projet. Les fichiers de construction seront stockés dans le répertoire dist/.
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Exécution des tests de bout en bout
+Exécutez 'ng e2e' pour exécuter les tests de bout en bout via une plateforme de votre choix. Pour utiliser cette commande, vous devez d'abord ajouter un package qui implémente les fonctionnalités de test de bout en bout.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Aide supplémentaire
 
-## Further help
+Pour obtenir plus d'aide sur Angular CLI, utilisez ng help ou consultez la page Vue d'ensemble et référence des commandes Angular CLI.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+src/
+├── app/
+│   ├── components/
+│   │   ├── class-management/
+│   │   │   ├── class-management.component.html
+│   │   │   ├── class-management.component.ts
+│   │   ├── student-management/
+│   │   │   ├── student-management.component.html
+│   │   │   ├── student-management.component.ts
+│   ├── app-routing.module.ts
+│   ├── app.component.html
+│   ├── app.component.ts
+│   ├── app.module.ts
+├── assets/
+├── environments/
+├── index.html
+├── main.ts
+└── styles.css
